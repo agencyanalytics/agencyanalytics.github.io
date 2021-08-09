@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>AA Hubspot Email Signature Generator</title>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+			crossorigin="anonymous"
+		></script>
+		<script src="js/mustache.js"></script>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+		<div class="signatureWrapper">
+			<div id="signature"></div>
+		</div>
+		<div id="editor">
+			<div class="content">
+				<form id="form">
+					<!-- Name -->
+					<label for="Name">Name</label>
+					<div class="sub">
+						If your image doesn't appear please contact Tyler
+					</div>
+					<input
+						name="Name"
+						placeholder="Tyler Pearce"
+						value="Tyler Pearce"
+					/>
+
+				
+
+					<!-- Role -->
+					<label for="Role">Role</label>
+					<input
+						name="Role"
+						placeholder="Web Developer"
+						value="Web Developer"
+					/>
+
+				</form>
+			</div>
+			<div class="actions">
+				<button onclick="copyToClip()">Copy signature</button>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

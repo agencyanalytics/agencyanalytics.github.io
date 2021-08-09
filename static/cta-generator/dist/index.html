@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>AA Email CTA Button Generator</title>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="js/mustache.js"></script>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+		<button id="authorize_button" style="display: none;">Authorize</button>
+		<button id="signout_button" style="display: none;">Sign Out</button>
+		<h2>CTA List</h2>
+		<div id="buttons">
+			loading... (please authorize)
+		</div>
+		<div id="editor">
+			<div class="content">
+				<form id="form">
+					<!-- Label -->
+					<label for="Label">Label</label>
+					<input
+						name="Label"
+						placeholder="Learn more"
+						value="Learn more"
+						id="inputLabel"
+					/>
+
+					<!-- URL -->
+					<label for="URL">URL</label>
+					<input
+						name="URL"
+						type="url"
+						id="inputURL"
+						placeholder="http://agencyanalytics.com/"
+						value="http://agencyanalytics.com/"
+					/>
+				</form>
+				<div id="cta"></div>
+			</div>
+			<div class="actions">
+				<button onclick="copyToClip()">Copy CTA</button>
+				<button id="btnInsertNew" style="display: none;" onclick="insertNewButton()">Save for later</button>
+				<button class="red" id="btnDelete" style="display: none;" onclick="deleteButton()">Delete</button>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+		<script src="js/googlesheets.js"></script>
+		<script src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+			onreadystatechange="if (this.readyState === 'complete') this.onload()">
+			</script>
+	</body>
+</html>
