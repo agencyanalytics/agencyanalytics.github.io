@@ -22,7 +22,7 @@ const debounce = (func, wait) => {
 
 // Generate absolute image URL
 const imageURL = (imageName) => {
-	return `https://agencyanalytics.com/static/signature-generator/dist/images/team/${imageName}.png`;
+	return `https://agencyanalytics.github.io/signature-generator/dist/images/team/${imageName}.png`;
 };
 
 // Render signature using Mustache and form data
