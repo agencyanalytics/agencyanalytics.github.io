@@ -6,7 +6,7 @@
         </mj-attributes>
         <mj-style inline="inline">
             .text-link {
-                color: #3196E3;
+                color: #0072ee;
                 text-decoration: none;
             }
 
