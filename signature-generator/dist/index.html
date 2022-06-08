@@ -79,11 +79,7 @@
 					<hr />
 
 					<label for="Link2Text">Link 2 Label</label>
-					<input
-						name="Link2Text"
-						placeholder="Free Trial"
-						value="Free Trial"
-					/>
+					<input name="Link2Text" placeholder="Free Trial" value="Free Trial" />
 
 					<label for="Link2">Link 2 URL</label>
 					<input
@@ -92,10 +88,28 @@
 						placeholder="https://agencyanalytics.com/signup"
 						value="https://agencyanalytics.com/signup"
 					/>
+
+					<hr />
+
+					<fieldset>
+						<legend>Sales team only</legend>
+						<!-- SalesPhone USA -->
+						<label for="SalesPhoneUSA">Phone Number USA</label>
+						<input name="SalesPhoneUSA" id="SalesPhoneUSA" type="url" placeholder="(123) 456-7890" />
+
+						<!-- SalesPhone Canada -->
+						<label for="SalesPhoneCAN">Phone Number Canada</label>
+						<input name="SalesPhoneCAN" id="SalesPhoneCAN" type="url" placeholder="(123) 456-7890" />
+
+						<!-- SalesPhone Australia -->
+						<label for="SalesPhoneAUS">Phone Number Australia</label>
+						<input name="SalesPhoneAUS" id="SalesPhoneAUS" type="url" placeholder="(123) 456-7890" />
+					</fieldset>
+
 				</form>
 			</div>
 			<div class="actions">
-				<button onclick="copyToClip()">Copy signature</button>
+				<button onclick="copyToClip()">Copy Signature</button>
 			</div>
 		</div>
 

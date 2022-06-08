@@ -20,3 +20,8 @@
 -   `signature.mustache.mjml` is the main signature template that uses a modified fork of MJML & Mustache templating
 -   This gets compiled into `dist/compiled.html` upon building
 -   `dist/index.html` is the generator form which pulls in that compiled html and is rendered with Mustache
+
+
+## Flag art
+
+Country flags used in Sales phone numbers were sourced from https://www.flaticon.com/. The Canada flag had a customized leaf applied.

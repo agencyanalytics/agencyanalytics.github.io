@@ -6,7 +6,7 @@
         </mj-attributes>
         <mj-style inline="inline">
             .text-link {
-                color: #3196E3;
+                color: #0072ee;
                 text-decoration: none;
             }
 
@@ -19,12 +19,15 @@
                 max-width: 220px !important;
                 width: 100% !important;
             }
+            .section {
+                margin: 0px !important;
+            }
         </mj-style>
     </mj-head>
 
     <mj-body width="324px">
-        <mj-section text-align="left" padding-bottom="14px">
-            <mj-column css-class="column-image" vertical-align="middle" width="102px" padding-right="19px">
+        <mj-section text-align="left" padding-bottom="14px" css-class="section">
+            <mj-column css-class="column-image" vertical-align="top" width="102px" padding-right="19px" padding-top="8px">
                 <!-- IMAGE -->
                 <mj-image padding="0" width="78px" src="{{Image}}" />
 
@@ -74,6 +77,41 @@
 
                 <mj-raw>
                     {{/Link1Text}}
+                </mj-raw>
+
+                <!-- Sales Phone numbers -->
+
+                <mj-raw>
+                {{#SalesPhoneUSA}}
+                </mj-raw>
+                    <mj-text padding-top="12px" padding-bottom="0px" >
+                        <img width="16px" height="16px" style="width: 16px; height: 16px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/us.png" />&nbsp;
+                        <a style="text-decoration: none; white-space: nowrap" title="Call USA Sales Office" class="text-link" href="tel:{{SalesPhoneUSA}}">{{SalesPhoneUSA}}</a>
+                    </mj-text>
+                <mj-raw>
+                {{/SalesPhoneUSA}}
+                </mj-raw>
+
+                <mj-raw>
+                {{#SalesPhoneCAN}}
+                </mj-raw>
+                    <mj-text padding-top="6px" padding-bottom="0px" >
+                        <img width="16px" height="16px" style="width: 16px; height: 16px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/ca.png" />&nbsp;
+                        <a style="text-decoration: none; white-space: nowrap" title="Call Canadian Sales Office" class="text-link" href="tel:{{SalesPhoneCAN}}">{{SalesPhoneCAN}}</a>
+                    </mj-text>
+                <mj-raw>
+                {{/SalesPhoneCAN}}
+                </mj-raw>
+
+                <mj-raw>
+                {{#SalesPhoneAUS}}
+                </mj-raw>
+                    <mj-text padding-top="6px" padding-bottom="0px" >
+                        <img width="16px" height="16px" style="width: 16px; height: 16px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/au.png" />&nbsp;
+                        <a style="text-decoration: none; white-space: nowrap" title="Call Australian Sales Office" class="text-link" href="tel:{{SalesPhoneAUS}}">{{SalesPhoneAUS}}</a>
+                    </mj-text>
+                <mj-raw>
+                {{/SalesPhoneAUS}}
                 </mj-raw>
 
             </mj-column>
