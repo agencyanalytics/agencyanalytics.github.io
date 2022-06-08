@@ -82,8 +82,7 @@
                 {{#SalesPhoneUSA}}
                 </mj-raw>
                     <mj-text padding-top="12px" padding-bottom="0px" >
-                        <!-- US flag has slightly different proportions than Can / Aus -->
-                        <img width="24px" height="13px" style="width: 24px; height: 13px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/us.png" />&nbsp;
+                        <img width="16px" height="16px" style="width: 16px; height: 16px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/us.png" />&nbsp;
                         <a style="text-decoration: none; white-space: nowrap" title="Call USA Sales Office" class="text-link" href="tel:{{SalesPhoneUSA}}">{{SalesPhoneUSA}}</a>
                     </mj-text>
                 <mj-raw>
@@ -94,7 +93,7 @@
                 {{#SalesPhoneCAN}}
                 </mj-raw>
                     <mj-text padding-top="6px" padding-bottom="0px" >
-                        <img width="24px" height="12px" style="width: 24px; height: 12px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/ca.png" />&nbsp;
+                        <img width="16px" height="16px" style="width: 16px; height: 16px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/ca.png" />&nbsp;
                         <a style="text-decoration: none; white-space: nowrap" title="Call Canadian Sales Office" class="text-link" href="tel:{{SalesPhoneCAN}}">{{SalesPhoneCAN}}</a>
                     </mj-text>
                 <mj-raw>
@@ -105,7 +104,7 @@
                 {{#SalesPhoneAUS}}
                 </mj-raw>
                     <mj-text padding-top="6px" padding-bottom="0px" >
-                        <img width="24px" height="12px" style="width: 24px; height: 12px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/au.png" />&nbsp;
+                        <img width="16px" height="16px" style="width: 16px; height: 16px; vertical-align: middle;" src="https://agencyanalytics.com/static/signature-generator/dist/images/flags/au.png" />&nbsp;
                         <a style="text-decoration: none; white-space: nowrap" title="Call Australian Sales Office" class="text-link" href="tel:{{SalesPhoneAUS}}">{{SalesPhoneAUS}}</a>
                     </mj-text>
                 <mj-raw>
