@@ -19,11 +19,14 @@
                 max-width: 220px !important;
                 width: 100% !important;
             }
+            .section {
+                margin: 0px !important;
+            }
         </mj-style>
     </mj-head>
 
     <mj-body width="324px">
-        <mj-section text-align="left" padding-bottom="14px">
+        <mj-section text-align="left" padding-bottom="14px" css-class="section">
             <mj-column css-class="column-image" vertical-align="top" width="102px" padding-right="19px" padding-top="8px">
                 <!-- IMAGE -->
                 <mj-image padding="0" width="78px" src="{{Image}}" />
