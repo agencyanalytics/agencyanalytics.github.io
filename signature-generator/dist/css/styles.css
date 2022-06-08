@@ -1,5 +1,6 @@
 #editor {
 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+	color: #0e2942;
 	position: fixed;
 	box-sizing: border-box;
 	right: 0;
@@ -23,6 +24,10 @@
 }
 
 input {
+	border-color: #0e294250;
+	border-width: thin;
+	border-radius: .25rem;
+	color: inherit;
 	margin-top: 5px;
 	font-size: 15px;
 	display: block;
@@ -34,6 +39,22 @@ input {
 
 label {
 	font-size: 15px;
+}
+
+fieldset {
+	border-color: #0e294225;
+	border-width: thin;
+	border-radius: .25rem;
+	padding: 1rem .75rem .75rem;
+}
+
+fieldset input:last-of-type {
+	margin-bottom: 0;
+}
+
+legend {
+	text-transform: uppercase;
+	font-size: .75rem;
 }
 
 .sub {
@@ -50,15 +71,20 @@ hr {
 
 #editor button {
 	cursor: pointer;
-	border: 1px solid #3196e3;
+	border: 1px solid #0072ee;
 	transition: all 150ms;
-	background-color: #3196e3;
+	background-color: #0072ee;
 	color: #ffffff;
 
 	padding: 0 2rem;
 	line-height: 2rem;
-	border-radius: 3px;
+	border-radius: .25rem;
 	font-weight: 600 !important;
+}
+
+#editor button:hover {
+	border: 1px solid #097fff;
+	background-color: #097fff;
 }
 
 .signatureWrapper {
